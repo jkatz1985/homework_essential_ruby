@@ -27,8 +27,8 @@
 #   - we add it to the running total
 #  - after we've looked at every number, the running total is the sum
 
-first_dataset = [93, 65, 87, 68, 2, 64, 36, 96, 45, 47]
-second_dataset = [2, 9, 405, 562, 740, 133, 346, 509, 21, 93]
+# first_dataset = [93, 65, 87, 68, 2, 64, 36, 96, 45, 47]
+# second_dataset = [2, 9, 405, 562, 740, 133, 346, 509, 21, 93]
 
 def sum(list_of_numbers)
   running_total = 0
