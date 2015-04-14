@@ -31,10 +31,12 @@ principal_amount = 200000.0
 #     Line 1 of this file.
 
 # ==============================================================
-loan_quotes.each do |bank|
-	puts pmt(("#{loan_quotes['annual_rate'.to_f]}").to_f/12, 30*12,200000.0)
+loan_quotes.each do |rate|
+	bankrate = "#{loan_quotes["rate".to_i]['annual_rate']}".to_f 
+	puts pmt(bankrate/12, number_of_monthly_payments,principal_amount)
 	end
-puts loan_quotes['annual_rate'.to_f]
+# puts "Your monthly payment is #{loan_quotes[2]['annual_rate']}"
+# puts loan_quotes['annual_rate']
 # Your code goes here.
 # You shouldn't have to write code or change code anywhere else.
 # ==============================================================
