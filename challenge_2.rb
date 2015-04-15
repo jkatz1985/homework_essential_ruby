@@ -32,8 +32,8 @@ principal_amount = 200000.0
 
 # ==============================================================
 loan_quotes.each do |rate|
-	bankrate = "#{loan_quotes["rate".to_i]['annual_rate']}".to_f 
-	puts pmt(bankrate/12, number_of_monthly_payments,principal_amount)
+	bankrate = rate['annual_rate'] 
+	puts "Your monthly payment from #{rate['bank']} is " + pmt(bankrate/12, number_of_monthly_payments,principal_amount).to_s
 	end
 # puts "Your monthly payment is #{loan_quotes[2]['annual_rate']}"
 # puts loan_quotes['annual_rate']
